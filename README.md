@@ -12,16 +12,24 @@ The aim of this mod is to stay true to the original game while forcing creativit
 
 ## Combat: More Risky
 +1. The world no longer stops for you during combat (except during assassinations. This causes problems if a target gets involved in a brawl.)
+
 +2. Enemies wait less time inbetween attacks & blocks.
+
 +3. Offscreen damage is now equal to onscreen damage.
+
 +4. You can be stunned for longer.
+
 +5. Enemies attack in greater numbers.
+
 +6. Guns no longer have any spread damage.
+
 +7. Windblast no longer causes any direct damage.
    
 ## Graphics: Cleaner
 +1. Bodies pile up  
+
 +2. No intro movies
+
 +3. Removed texture pop-in
 
 ## Thanks for your contributions: ZippyDSMlee, Phoenixedd, Mr.Bueno
