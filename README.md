@@ -1,64 +1,45 @@
-// Dishonored Ultimate Difficulty Mod: Witches of Brigmore \\\\\\\\\\\\\\\\\\
-////////////////// ver 0.04 JDV, Aug 2013 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-// 
-// The aim of this mod is to stay true to the original game while forcing 
-// creativity. The goal is to make the game significantly more challenging 
-// while not modifying the health of any character, as the relative fragility 
-// of the characters is an important aspect of the Dishonored universe.
-//
-// My hope is that you will be pushed to your limit, combining your physical &
-// magical attacks with stealth in suprising ways in order to survive this 
-// punishing world.
-//
-// There is no shame in hiding.
-//
-// 	  Stealth: Harder, but Required
-// 1. Enemies are more alert and persistant.
-// 2. You make more noise and are easier to see.
-// 3. You can no longer lean like a boss.
-// 4. Sleep darts take 10 seconds to work without upgrades.
-//
-// Magic & Abilities: Encourage Specialization
-// 1. Abilities are now considerably more expensive.
-//
-//	  Combat: More Risky
-// 1. The world no longer stops for you during combat.
-//		a) Except during assassinations. This causes problems if a target gets
-//		   involved in a brawl.
-// 2. Enemies wait less time inbetween attacks & blocks.
-// 3. Offscreen damage is now equal to onscreen damage.
-// 4. You can be stunned for longer.
-// 5. Enemies attack in greater numbers.
-// 6. Guns no longer have any spread damage.
-// 7. Windblast no longer causes any direct damage.
-//   
-//	  Graphics: Cleaner
-// 1. Bodies pile up  
-// 2. No intro movies
-// 3. Removed texture pop-in
-//
-// Thanks for your contributions: ZippyDSMlee, Phoenixedd, Mr.Bueno
-//
-// Special thanks to Northon of TTLG, creator of the Thief 1/Gold Ultimate 
-// Difficulty Mod, which serves as a spiritual predecessor for this attempt.
-//
-////////////////////////////////////////////////////////////////////////////////
+#  Dishonored Ultimate Difficulty Mod: Witches of Brigmore ver 0.04 JDV, Aug 2013
+The aim of this mod is to stay true to the original game while forcing creativity. The goal is to make the game significantly more challenging while not modifying the health of any character, as the relative fragility of the characters is an important aspect of the Dishonored universe. My hope is that you will be pushed to your limit, combining your physical & magical attacks with stealth in suprising ways in order to survive this punishing world. There is no shame in hiding.
 
-//          For this to work, overwrite the files found in 
-//
-// %userdirectory%/My Documents/My Games/Dishonored/DishonoredGame/Config
-//
-// with the files found in the download link below. Ensure the .ini files are 
-// read-only, or the game will overwrite these new settings with game defaults. 
-// I designed this on "very hard" difficulty, so you should perhaps make sure 
-// your game is set to "very hard" as well.
-//
-// Please be sure to backup your config folder before you make any changes!!!
+## Stealth: Harder, but Required
++1. Enemies are more alert and persistant.
++2. You make more noise and are easier to see.
++3. You can no longer lean like a boss.
++4. Sleep darts take 10 seconds to work without upgrades.
 
-/
-//In My Documents Folder ("Dishonored")////////////////////////////////////////
+## Magic & Abilities: Encourage Specialization
++1. Abilities are now considerably more expensive.
 
-AI.ini
+## Combat: More Risky
++1. The world no longer stops for you during combat (except during assassinations. This causes problems if a target gets involved in a brawl.)
++2. Enemies wait less time inbetween attacks & blocks.
++3. Offscreen damage is now equal to onscreen damage.
++4. You can be stunned for longer.
++5. Enemies attack in greater numbers.
++6. Guns no longer have any spread damage.
++7. Windblast no longer causes any direct damage.
+   
+## Graphics: Cleaner
++1. Bodies pile up  
++2. No intro movies
++3. Removed texture pop-in
+
+## Thanks for your contributions: ZippyDSMlee, Phoenixedd, Mr.Bueno
+
+## Special thanks to Northon of TTLG, creator of the Thief 1/Gold Ultimate Difficulty Mod, which serves as a spiritual predecessor for this attempt.
+
+# Installation
+For this to work, overwrite the files found in 
+
+    %userdirectory%/My Documents/My Games/Dishonored/DishonoredGame/Config
+
+with the files found in the download link below. Ensure the .ini files are read-only, or the game will overwrite these new settings with game defaults. I designed this on "very hard" difficulty, so you should perhaps make sure your game is set to "very hard" as well.
+
+Please be sure to backup your config folder before you make any changes!!!
+
+
+# Changelog: In My Documents Folder ("Dishonored")
+## AI.ini
 
 	[DishonoredGame.DishonoredGlobalAIManager]
 	m_bCorpseCleanupInView=True --> False
@@ -125,7 +106,7 @@ AI.ini
 	m_TotalSkirmishCaps[2]=4 --> 7
 	m_TotalSkirmishCaps[3]=4 --> 8
 
-Camera.ini
+## Camera.ini
 
 	[DishonoredGame.DishonoredCamera_Lean]
 	m_fMaxLeanAngle=15 --> 4
@@ -133,12 +114,12 @@ Camera.ini
 	m_fMaxLeanSoftenAngle= 4 --> 2
 	m_fMaxLeanSoftenSpeed= 4 --> 2
 	
-Engine.ini
+## Engine.ini
 
 	[FullScreenMovie]
 	bForceNoStartupMovies=false --> true
 
-Player.ini
+## Player.ini
 
 	[DishonoredGame.DishonoredPlayerPawn]
 	m_fVisRegionTopHeight_Crouched=40.000000 --> 100
@@ -158,7 +139,7 @@ Player.ini
 	m_Powers=(m_Name="ShadowKill",m_eUISelection=eDisUISelectionType_ShadowKill,    m_Levels=((m_RuneCost=0,m_Modifiers=), (m_RuneCost=2 --> 6,m_Modifiers=),(m_RuneCost=3 --> 4,m_Modifiers=)),m_CurrentLevel=-1)
 	m_Powers=(m_Name="Celerity",m_eUISelection=eDisUISelectionType_Celerity,        m_Levels=((m_RuneCost=0,m_Modifiers=), (m_RuneCost=2 --> 6,m_Modifiers=((m_AttributeName="Attribute_JumpZ_PowerJump",m_ModType=eDisAttributeModifierType_AddVal,m_fModValue=1300),(m_AttributeName="Attribute_PowerJumpFullStop_PROTOTYPE",m_ModType=eDisAttributeModifierType_SetVal,m_fModValue=1000),(m_AttributeName="Attribute_FullStop_ExtraStopVel_PROTOTYPE",m_ModType=eDisAttributeModifierType_SetVal,m_fModValue=500.000000),(m_AttributeName="Attribute_HeldPowerJumpButtonTime_PROTOTYPE",m_ModType=eDisAttributeModifierType_SetVal,m_fModValue=0.400000),(m_AttributeName="Attribute_HeldPowerJumpAccel_PROTOTYPE",m_ModType=eDisAttributeModifierType_SetVal,m_fModValue=1800),(m_AttributeName="Attribute_MaxSpeedBeforeFallingDamage",m_ModType=eDisAttributeModifierType_SetVal,m_fModValue=2550.000000),(m_AttributeName="Attribute_MaxSpeedBeforeFallingDeath",m_ModType=eDisAttributeModifierType_SetVal,m_fModValue=3500.000000))),(m_RuneCost=3 --> 4,m_Modifiers=((m_AttributeName="Attribute_JumpZ_PowerJump",m_ModType=eDisAttributeModifierType_AddVal,m_fModValue=1300.000000),(m_AttributeName="Attribute_PowerJumpFullStop_PROTOTYPE",m_ModType=eDisAttributeModifierType_AddVal,m_fModValue=1500.000000),(m_AttributeName="Attribute_FullStop_ExtraStopVel_PROTOTYPE",m_ModType=eDisAttributeModifierType_AddVal,m_fModValue=500.000000),(m_AttributeName="Attribute_HeldPowerJumpButtonTime_PROTOTYPE",m_ModType=eDisAttributeModifierType_SetVal,m_fModValue=0.400000),(m_AttributeName="Attribute_HeldPowerJumpAccel_PROTOTYPE",m_ModType=eDisAttributeModifierType_SetVal,m_fModValue=3000.000000),(m_AttributeName="Attribute_WaterSpeed",m_ModType=eDisAttributeModifierType_AddBasePercent,m_fModValue=10.000000),(m_AttributeName="Attribute_GroundSpeedSprint",m_ModType=eDisAttributeModifierType_AddBasePercent,m_fModValue=30.000000),(m_AttributeName="Attribute_LandAnimRate",m_ModType=eDisAttributeModifierType_AddBasePercent,m_fModValue=50.000000),(m_AttributeName="Attribute_MantleAnimRate",m_ModType=eDisAttributeModifierType_AddBasePercent,m_fModValue=50.000000),(m_AttributeName="Attribute_GroundStrafeMultiplierSprint",m_ModType=eDisAttributeModifierType_SetVal,m_fModValue=0.500000),(m_AttributeName="Attribute_GroundBackwardMultiplierSprint",m_ModType=eDisAttributeModifierType_SetVal,m_fModValue=0.400000),(m_AttributeName="Attribute_MaxSpeedBeforeFallingDamage",m_ModType=eDisAttributeModifierType_SetVal,m_fModValue=2550.000000),(m_AttributeName="Attribute_MaxSpeedBeforeFallingDeath",m_ModType=eDisAttributeModifierType_SetVal,m_fModValue=3500.000000)))),m_CurrentLevel=-1)
 
-PlayerState.ini
+## PlayerState.ini
 
 	[DishonoredGame.StatePlayerMasterLeaning]
 	m_fLeanReleaseTime=0.2 --> 0.4
@@ -182,7 +163,7 @@ PlayerState.ini
 	[DishonoredGame.StatePlayerMasterMinigame]
 	m_bAllowIncomingAttacks=False --> True
 
-Weapon.ini
+## Weapon.ini
 
 	[DishonoredGame.DishonoredDamageType_BulletBlast]
 	m_bDisableHitReaction=True \\ added
